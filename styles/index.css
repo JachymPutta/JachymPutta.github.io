@@ -11,7 +11,7 @@
   display: flex;
   align-items: center;
   width: 100%;
-  max-width: 960px;
+  max-width: 1200px;
   margin: 0 auto;
   text-align: center;
 }
@@ -25,7 +25,7 @@
 
 .intro {
   width: 50%;
-  max-width: 960px;
+  max-width: 1200px;
   margin: 0 auto;
   text-align: left;
 }
@@ -34,12 +34,12 @@
   background-color: #f2f2f2;
   padding: 50px 0;
   margin: 0 auto;
-  max-width: 960px;
+  max-width: 1200px;
 }
 
 .exp {
   width: 80%;
   margin: 0 auto;
-  max-width: 960px;
+  max-width: 1200px;
   text-align: left;
 }
