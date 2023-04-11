@@ -8,17 +8,17 @@ document.addEventListener('DOMContentLoaded', function() {
   const aboutSection = document.getElementById('contact');
 
   scrollToIntroButton.addEventListener('click', () => {
-    const top = introSection.getBoundingClientRect().top + window.scrollY - 100;
+    const top = introSection.getBoundingClientRect().top + window.scrollY - 70;
     window.scrollTo({ top, behavior: 'smooth' });
   });
 
   scrollToExpButton.addEventListener('click', () => {
-    const top = expSection.getBoundingClientRect().top + window.scrollY - 100;
+    const top = expSection.getBoundingClientRect().top + window.scrollY - 70;
     window.scrollTo({ top, behavior: 'smooth' });
   });
 
   scrollToContactButton.addEventListener('click', () => {
-    const top = aboutSection.getBoundingClientRect().top + window.scrollY - 100;
+    const top = aboutSection.getBoundingClientRect().top + window.scrollY - 70;
     window.scrollTo({ top, behavior: 'smooth' });
   });
 });

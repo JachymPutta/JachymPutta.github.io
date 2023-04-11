@@ -11,33 +11,22 @@
   <script src="scrolling.js"></script>
 </head>
 <body>
-<div class='grey'></div><section id="header" class="flex flex-col items-center justify-center">
-  <div class="bg-header-gray rounded-full fixed top-0 w-full max-w-6xl">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
-      <div class="flex items-center space-x-8">
-        <button id="scroll-to-intro" class="text-xl font-semibold text-white">Introduction</button>
-        <button id="scroll-to-exp" class="text-xl font-semibold text-white">Experience</button>
-        <button id="scroll-to-contact" class="text-xl font-semibold text-white">Contact</button>
-      </div>
-      <div class="flex items-center">
-        <a href="https://www.linkedin.com/in/jachym-putta/" target="_blank">
-          <span class="sr-only">LinkedIn</span>
-          <i class="fa fa-linkedin"></i>
-        </a>
-        <a href="https://github.com/JachymPutta" target="_blank">
-          <span class="sr-only">GitHub</span>
-          <i class="fa fa-github"></i>
-        </a>
-      </div>
+<div class='grey'></div><section id="header" class="flex flex-col sticky items-center justify-center z-10 ">
+  <div class="bg-header-gray rounded-full fixed top-3 w-auto max-w-6xl bg-opacity-80 backdrop-blur-sm">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-center h-12">
+        <button id="scroll-to-intro" class="text-xl font-semibold text-white mx-4">Introduction</button>
+        <button id="scroll-to-exp" class="text-xl font-semibold text-white mx-4">Experience</button>
+        <button id="scroll-to-contact" class="text-xl font-semibold text-white mx-4">Contact</button>
     </div>
   </div>
 </section>
 
 <section class="flex flex-col items-center justify-center">
-  <section id="intro" class="grid max-w-6xl grid-cols-2 gap-8 mt-24 mb-12 ">
+  <section id="intro" class="grid max-w-3xl grid-cols-2 p-4 gap-4 mt-20 mb-12 
+      bg-gray-100 bg-opacity-60 backdrop-blur-sm rounded-md">
     <div class="flex flex-col col-span-1 items-center">
       <img
-        class="avatar rounded-full w-72 h-72 mb-4"
+        class="avatar rounded-full w-64 h-64 mb-4"
         src="resources/myAvatar.png"
         alt="Photo of Jachym Putta"
       />
@@ -55,7 +44,7 @@
         </div>
     </div>
     <div class="col-span-1">
-      <p class="text-lg leading-7 text-gray-600">
+      <p class="text-xl leading-7 text-gray-600">
         I am a computer science student passionate about distributed systems,
         operating systems and networks.
       </p>
@@ -66,8 +55,8 @@
             <div class="flex items-center grid-cols-2">
             <img src="resources/yaleLogo.png" alt="YaleLogo" class="col-span-1 h-14 w-14 mr-4">
             <div class="col-span-1">
-            <span class="text-sm font-medium text-gray-500">PhD - Computer Science</span><br>
-            Yale University
+            <span class="text-md font-medium text-gray-500">PhD - Computer Science</span><br>
+                    Yale University - <span class="font-semibold text-gray-800">Current</span>
             </div>
             </div>
           </li>
@@ -75,7 +64,7 @@
             <div class="flex items-center grid-cols-2">
             <img src="resources/yncLogo.png" alt="YNCLogo" class="col-span-1 h-14 w-14 mr-4">
             <div class="col-span-1">
-            <span class="text-sm font-medium text-gray-500">Bachelor's Degree</span><br>
+            <span class="text-md font-medium text-gray-500">Bachelor's Degree</span><br>
             Yale-NUS College, May 2023
             </div>
             </div>
@@ -84,7 +73,7 @@
             <div class="flex items-center grid-cols-2">
             <img src="resources/oxfordLogo.png" alt="YNCLogo" class="col-span-1 h-14 w-14 mr-4">
             <div class="col-span-1">
-            <span class="text-sm font-medium text-gray-500">Exchange Program</span><br>
+            <span class="text-md font-medium text-gray-500">Exchange Program</span><br>
             University of Oxford, Michaelmas 2023
             </div>
             </div>
@@ -94,43 +83,70 @@
     </div>
   </section>
 
-  <section id="exp" class="flex flex-col items-center max-w-6xl text-left bg-gray-200 rounded-md">
-    <div class="timeline_work w-9/10 mx-8 my-8">
-      <h1 class="text-center text-3xl font-semibold">Experience</h1>
-      <hr class="border-t-1 border-black my-4"/>
-      <ul class="pl-10 w-9/10">
-          <li class="my-6">
-            <div class="flex items-center grid-cols-2">
-            <img src="resources/yaleLogo.png" alt="YaleLogo" class="col-span-1 h-14 w-14 mr-4">
-            <div class="col-span-1">
-            <span class="text-sm font-medium text-gray-500">PhD - Computer Science</span><br>
-            Yale University
-            </div>
-            </div>
-          </li>
-          <li class="my-6">
-            <div class="flex items-center grid-cols-2">
-            <img src="resources/yncLogo.png" alt="YNCLogo" class="col-span-1 h-14 w-14 mr-4">
-            <div class="col-span-1">
-            <span class="text-sm font-medium text-gray-500">Bachelor's Degree</span><br>
-            Yale-NUS College, May 2023
-            </div>
-            </div>
-          </li>
-          <li class="my-6">
-            <div class="flex items-center grid-cols-2">
-            <img src="resources/oxfordLogo.png" alt="YNCLogo" class="col-span-1 h-14 w-14 mr-4">
-            <div class="col-span-1">
-            <span class="text-sm font-medium text-gray-500">Exchange Program</span><br>
-            University of Oxford, Michaelmas 2023
-            </div>
-            </div>
-          </li>
-        </ul>
+  <section id="exp" class="flex flex-col items-center max-w-3xl w-full text-left rounded-md
+      bg-gray-100 bg-opacity-60 backdrop-blur-sm">
+      <h1 class="text-center text-3xl font-medium mt-2">Experience</h1>
+      <ul class="grid grid-cols-3 gap-4 pl-10">
+  <li class="my-6">
+    <div class="flex items-center">
+      <div class="border-2 border-gray-100 shadow-xl p-4 rounded-md mr-4 bg-white">
+        <img src="resources/yncLogo.png" alt="YNCLogo" class="h-14 w-14">
+      </div>
+      <div>
+        <span class="block text-md font-medium text-gray-500">Research Assistant</span>
+        <span class="block">Yale-NUS College</span>
+      </div>
     </div>
+  </li>
+  <li class="my-6">
+    <div class="flex items-center">
+      <div class="border-2 border-gray-100 shadow-xl p-4 rounded-md mr-4 bg-white">
+        <img src="resources/yaleLogo.png" alt="YaleLogo" class="h-14 w-14">
+      </div>
+      <div>
+        <span class="block text-md font-medium text-gray-500">Research Assistant</span>
+        <span class="block">Yale University</span>
+      </div>
+    </div>
+  </li>
+  <li class="my-6">
+    <div class="flex items-center">
+      <div class="border-2 border-gray-100 shadow-xl p-4 rounded-md mr-4 bg-white">
+        <img src="resources/yncLogo.png" alt="YNCLogo" class="h-14 w-14">
+      </div>
+      <div>
+        <span class="block text-md font-medium text-gray-500">Peer Tutor</span>
+        <span class="block">Yale-NUS College</span>
+      </div>
+    </div>
+  </li>
+  <li class="my-6">
+    <div class="flex items-center">
+      <div class="border-2 border-gray-100 shadow-xl p-4 rounded-md mr-4 bg-white">
+        <img src="resources/zilliqaLogo.png" alt="ZilliqaLogo" class="h-14 w-14">
+      </div>
+      <div>
+        <span class="block text-md font-medium text-gray-500">Research Intern</span>
+        <span class="block">Zilliqa</span>
+      </div>
+    </div>
+  </li>
+  <li class="my-6">
+    <div class="flex items-center">
+      <div class="border-2 border-gray-100 shadow-xl px-4 py-6 rounded-md mr-4 bg-white">
+        <img src="resources/upskillsLogo.png" alt="UpskillsLogo" class="h-10 w-14">
+      </div>
+      <div>
+        <span class="block text-md font-medium text-gray-500">Research Intern</span>
+        <span class="block">Upskills</span>
+      </div>
+    </div>
+  </li>
+</ul>
   </section>
 
-  <section id="contact" class="sec my-12">
+  <section id="contact" class="sec my-12
+      bg-gray-100 bg-opacity-60 backdrop-blur-sm">
     <h1 class="text-3xl font-semibold text-black">Contact</h1>
     <div class="h-96 bg-gray-200"></div>
     <div class="h-96 bg-gray-200"></div>
