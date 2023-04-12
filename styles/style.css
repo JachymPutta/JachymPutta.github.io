@@ -55,4 +55,32 @@ ul {
   }
 }
 
+@media screen and (max-width: 640px) {
+  #scroll-to-intro::before {
+    content: "Intro";
+  }
+  #scroll-to-exp::before {
+    content: "Jobs";
+  }
+  #scroll-to-projects::before  {
+    content: "Projects";
+  }
+  #scroll-to-contact::before  {
+    content: "@me";
+  }
+}
 
+@media screen and (min-width: 641px) {
+  #scroll-to-intro::before {
+    content: "Introduction";
+  }
+  #scroll-to-exp::before {
+    content: "Job History";
+  }
+  #scroll-to-projects::before  {
+    content: "Projects";
+  }
+  #scroll-to-contact::before  {
+    content: "Contact";
+  }
+}
