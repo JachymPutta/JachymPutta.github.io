@@ -29,4 +29,30 @@
   color: #6B7280;
 }
 
+ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+/* Mobile stuff */
+@media (max-width: 640px) {
+  #intro {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #exp ul {
+    grid-template-columns: repeat(2, minmax(0, 2fr));
+  }
+}
+
+@media screen and (max-width: 639px) {
+  #exp ul {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
 
