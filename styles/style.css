@@ -55,6 +55,7 @@ ul {
   }
 }
 
+/* Navigation bar adaptation*/
 @media screen and (max-width: 640px) {
   #scroll-to-intro::before {
     content: "Intro";
@@ -84,4 +85,3 @@ ul {
     content: "Contact";
   }
 }
-
