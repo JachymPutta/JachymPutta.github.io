@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.fa {
+  padding: 14px;
+  text-decoration: none;
+  margin: 5px 5px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-linkedin {
+  background: #0077B5;
+  color: white;
+}
+
+.fa-github {
+  background: black;
+  color: white;
+}
+
+.sub-heading {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #6B7280;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+/* Mobile stuff */
+@media (max-width: 640px) {
+  #intro {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #exp ul {
+    grid-template-columns: repeat(2, minmax(0, 2fr));
+  }
+}
+
+@media screen and (max-width: 639px) {
+  #exp ul {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+/* Navigation bar adaptation*/
+@media screen and (max-width: 640px) {
+  #scroll-to-intro::before {
+    content: "Intro";
+  }
+  #scroll-to-exp::before {
+    content: "Jobs";
+  }
+  #scroll-to-projects::before  {
+    content: "Projects";
+  }
+  #scroll-to-contact::before  {
+    content: "@me";
+  }
+}
+
+@media screen and (min-width: 641px) {
+  #scroll-to-intro::before {
+    content: "Introduction";
+  }
+  #scroll-to-exp::before {
+    content: "Job History";
+  }
+  #scroll-to-projects::before  {
+    content: "Projects";
+  }
+  #scroll-to-contact::before  {
+    content: "Contact";
+  }
+}

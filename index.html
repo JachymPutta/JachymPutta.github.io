@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jachym Putta</title>
+  <link href="styles/style_out.css" rel="stylesheet" />
+  <link href="styles/animation.css" rel="stylesheet" />
+  <link rel="icon" type="image/x-icon" href="resources/favicon.ico" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <script src="scrolling.js"></script>
+</head>
+<body>
+  <section
+    id="header"
+    class="flex flex-col sticky items-center justify-center z-10"
+  >
+    <div
+      class="bg-header-gray rounded-full fixed top-3 w-auto max-w-6xl bg-opacity-80 backdrop-blur-sm"
+    >
+      <div
+        class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-16 flex items-center justify-center h-12"
+      >
+        <button
+          id="scroll-to-intro"
+          class="lg:text-xl sm:text-md font-semibold text-white mx-4"
+        >
+        </button>
+        <button
+          id="scroll-to-exp"
+          class="lg:text-xl sm:text-md font-semibold text-white mx-4"
+        >
+        </button>
+        <button
+          id="scroll-to-projects"
+          class="lg:text-xl sm:text-md font-semibold text-white mx-4"
+        >
+        </button>
+        <button
+          id="scroll-to-contact"
+          class="lg:text-xl sm:text-md font-semibold text-white mx-4"
+        >
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="flex flex-col items-center justify-center">
+    <section
+      id="intro"
+      class="grid max-w-3xl grid-cols-2 p-4 gap-4 mt-20 mb-12 bg-gray-100 bg-opacity-60 backdrop-blur-sm rounded-md"
+    >
+      <div class="flex flex-col col-span-1 items-center">
+        <img
+          class="avatar rounded-full w-64 h-64 mb-4"
+          src="resources/jachymPutta.jpg"
+          alt="Photo of Jachym Putta"
+        />
+        <h2 class="text-xl font-semibold">Jachym Putta</h2>
+        <h3 class="sub-heading">@JachymPutta</h3>
+        <div class="flex items-center">
+          <a href="https://www.linkedin.com/in/jachym-putta/" target="_blank">
+            <i class="fa fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/JachymPutta" target="_blank">
+            <i class="fa fa-github"></i>
+          </a>
+          <a
+            href="resources/CV.pdf"
+            target="_blank"
+            class="text-white bg-orange-400 rounded-full p-2.5 font-bold text-xl ml-1 hover:bg-opacity-70"
+            >CV</a
+          >
+        </div>
+      </div>
+      <div class="col-span-1">
+        <p class="text-xl leading-7 text-gray-600">
+          I am a computer science student passionate about distributed systems,
+          operating systems and networks.
+        </p>
+        <div class="mt-6">
+          <h4 class="text-xl font-bold text-gray-700 mb-2">Education</h4>
+          <ul class="pl-5">
+            <li class="my-6">
+              <div class="flex items-center grid-cols-2">
+                <img
+                  src="resources/yaleLogo.png"
+                  alt="YaleLogo"
+                  class="col-span-1 h-14 w-14 mr-4"
+                />
+                <div class="col-span-1">
+                  <span class="text-md font-medium text-gray-500"
+                    >PhD - Computer Science</span
+                  ><br />
+                  Yale University <br/>
+                  <span class="font-semibold text-gray-800">Current</span>
+                </div>
+              </div>
+            </li>
+            <li class="my-6">
+              <div class="flex items-center grid-cols-2">
+                <img
+                  src="resources/yncLogo.png"
+                  alt="YNCLogo"
+                  class="col-span-1 h-14 w-14 mr-4"
+                />
+                <div class="col-span-1">
+                  <span class="text-md font-medium text-gray-500"
+                    >Bachelor's Degree</span
+                  ><br />
+                  Yale-NUS College <br/> <span class="text-sm">December 2023</span>
+                </div>
+              </div>
+            </li>
+            <li class="my-6">
+              <div class="flex items-center grid-cols-2">
+                <img
+                  src="resources/oxfordLogo.png"
+                  alt="YNCLogo"
+                  class="col-span-1 h-14 w-14 mr-4"
+                />
+                <div class="col-span-1">
+                  <span class="text-md font-medium text-gray-500"
+                    >Exchange Program</span
+                  ><br />
+                  University of Oxford <br/> <span class="text-sm">Michaelmas 2023</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="exp"
+      class="flex flex-col items-center p-4 max-w-3xl w-full text-left rounded-md bg-gray-100 bg-opacity-60 backdrop-blur-sm"
+    >
+      <h1 class="text-center text-3xl font-medium mt-2">Job History</h1>
+      <ul class="grid grid-cols-3 gap-4 pl-10">
+        <li class="my-6">
+          <div class="flex items-center">
+            <div
+              class="border-2 border-gray-100 shadow-xl p-4 rounded-md mr-4 bg-white"
+            >
+              <img
+                src="resources/cdn77Logo.png"
+                alt="CDN77Logo"
+                class="h-14 w-14"
+              />
+            </div>
+            <div>
+              <span class="block text-md font-medium text-gray-500"
+                >Video Streaming Intern</span
+              >
+              <span class="block">CDN77</span>
+            </div>
+          </div>
+        </li>
+        <li class="my-6">
+          <div class="flex items-center">
+            <div
+              class="border-2 border-gray-100 shadow-xl p-4 rounded-md mr-4 bg-white"
+            >
+              <img
+                src="resources/yncLogo.png"
+                alt="YNCLogo"
+                class="h-14 w-14"
+              />
+            </div>
+            <div>
+              <span class="block text-md font-medium text-gray-500"
+                >Research Assistant</span
+              >
+              <span class="block">Yale-NUS College</span>
+            </div>
+          </div>
+        </li>
+        <li class="my-6">
+          <div class="flex items-center">
+            <div
+              class="border-2 border-gray-100 shadow-xl p-4 rounded-md mr-4 bg-white"
+            >
+              <img
+                src="resources/yaleLogo.png"
+                alt="YaleLogo"
+                class="h-14 w-14"
+              />
+            </div>
+            <div>
+              <span class="block text-md font-medium text-gray-500"
+                >Research Assistant</span
+              >
+              <span class="block">Yale University</span>
+            </div>
+          </div>
+        </li>
+        <li class="my-6">
+          <div class="flex items-center">
+            <div
+              class="border-2 border-gray-100 shadow-xl p-4 rounded-md mr-4 bg-white"
+            >
+              <img
+                src="resources/yncLogo.png"
+                alt="YNCLogo"
+                class="h-14 w-14"
+              />
+            </div>
+            <div>
+              <span class="block text-md font-medium text-gray-500"
+                >Peer Tutor</span
+              >
+              <span class="block">Yale-NUS College</span>
+            </div>
+          </div>
+        </li>
+        <li class="my-6">
+          <div class="flex items-center">
+            <div
+              class="border-2 border-gray-100 shadow-xl p-4 rounded-md mr-4 bg-white"
+            >
+              <img
+                src="resources/zilliqaLogo.png"
+                alt="ZilliqaLogo"
+                class="h-14 w-14"
+              />
+            </div>
+            <div>
+              <span class="block text-md font-medium text-gray-500"
+                >Research Intern</span
+              >
+              <span class="block">Zilliqa</span>
+            </div>
+          </div>
+        </li>
+        <li class="my-6">
+          <div class="flex items-center">
+            <div
+              class="border-2 border-gray-100 shadow-xl px-4 py-6 rounded-md mr-4 bg-white"
+            >
+              <img
+                src="resources/upskillsLogo.png"
+                alt="UpskillsLogo"
+                class="h-10 w-18"
+              />
+            </div>
+            <div>
+              <span class="block text-md font-medium text-gray-500"
+                >Software Enginnering Intern</span
+              >
+              <span class="block">Upskills</span>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section
+      id="projects"
+      class="flex flex-col items-center max-w-3xl w-full text-left rounded-md bg-gray-100 bg-opacity-60 backdrop-blur-sm py-4 my-12"
+    >
+      <h1 class="text-3xl font-medium text-black mt-2">Projects</h1>
+      <ul class="pl-5 grid grid-cols-1 md:grid-cols-1">
+        <li class="my-6">
+          <div class="flex items-center">
+            <div
+              class="border-2 border-gray-100 shadow-xl p-4 rounded-md mr-8 bg-white"
+            >
+              <img
+                src="resources/androidLogo.png"
+                alt="ChoreyLogo"
+                class="col-span-1 h-20 w-20"
+              />
+            </div>
+            <div>
+              <span class="block text-lg font-semibold"
+                >Chorey</span
+              >
+              <span class="block text-md text-gray-500">
+                Co-living management app</span>
+              <h4 class="text-sm mt-4">Built with:</h4>
+              <div class="flex flex-row m-2">
+                <div class="flex flex-col items-center mr-4 text-center">
+                  <img
+                    src="resources/kotlinLogo.png"
+                    alt="KotlinLogo"
+                    class="h-8 w-8"
+                  />
+                  <p class="sub-heading">
+                    Kotlin
+                  </p>
+                </div>
+                <div class="flex flex-col items-center mx-4 text-center">
+                <img
+                  src="resources/androidStudioLogo.png"
+                  alt="AndroidStudioLogo"
+                  class="mx-2 h-8 w-8"
+                />
+                  <p class="sub-heading">
+                    Android Studio
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="my-6">
+          <div class="flex items-center">
+            <div
+              class="border-2 border-gray-100 shadow-xl p-4 rounded-md mr-8 bg-white"
+            >
+              <img
+                src="resources/wcfaLogo.png"
+                alt="GameOfLife"
+                class="col-span-1 h-20 w-20"
+              />
+            </div>
+            <div>
+              <span class="block text-lg font-semibold">
+                W-CFA</span>
+              <span class="block text-md text-gray-500">
+                0-CFA worklist implementation on the GPU</span
+              >
+              <h4 class="text-sm mt-4">Built with:</h4>
+              <div class="flex flex-row m-2">
+                <div class="flex flex-col items-center mr-4 text-center">
+                  <img
+                    src="resources/cppLogo.png"
+                    alt="CppLogo"
+                    class="h-10 w-10"
+                  />
+                  <p class="sub-heading">
+                    C++
+                  </p>
+                </div>
+                <div class="flex flex-col items-center mx-4 text-center">
+                <img
+                  src="resources/cudaLogo.png"
+                  alt="CUDALogo"
+                  class="mx-2 h-10 w-10"
+                />
+                  <p class="sub-heading">
+                    CUDA
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="my-6">
+          <div class="flex items-center">
+            <div
+              class="border-2 border-gray-100 shadow-xl p-4 rounded-md mr-8 bg-white"
+            >
+              <img
+                src="resources/gameOfLife.gif"
+                alt="GameOfLife"
+                class="col-span-1 h-20 w-20"
+              />
+            </div>
+            <div>
+              <span class="block text-lg font-semibold">
+                Conway's Game of Life</span
+              >
+              <span class="block text-md text-gray-500">
+                Custom simulation</span>
+              <h4 class="text-sm mt-4">Built with:</h4>
+              <div class="flex flex-row m-2">
+                <div class="flex flex-col items-center mr-4 text-center">
+                  <img
+                    src="resources/ocamlLogo.png"
+                    alt="KotlinLogo"
+                    class="h-8 w-8"
+                  />
+                  <p class="sub-heading">
+                    OCaml
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section
+      id="contact"
+      class="flex flex-col items-center max-w-3xl w-full text-left rounded-md bg-gray-100 bg-opacity-60 backdrop-blur-sm py-4 my-12"
+    >
+      <h1 class="text-3xl font-medium text-black mt-2">Contact</h1>
+      <p class="font-light text-xl my-6">Feel free to reach out by email!</p>
+      <div class="sub-heading py-4">jachym.putta[at]yale.edu</div>
+    </section>
+
+    <div class="white">
+      <div class="squares">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+      </div>
+    </div>
+  </section>
+</body>
