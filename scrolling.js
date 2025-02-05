@@ -4,6 +4,8 @@ document.addEventListener('DOMContentLoaded', function() {
   const scrollToProjectsButton = document.getElementById('scroll-to-projects');
   const scrollToContactButton = document.getElementById('scroll-to-contact');
 
+  const goToBlogButton = document.getElementById('go-to-blog');
+
   const introSection = document.getElementById('intro');
   const expSection = document.getElementById('exp');
   const projectsSection = document.getElementById('projects');
@@ -28,4 +30,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const top = aboutSection.getBoundingClientRect().top + window.scrollY - 70;
     window.scrollTo({ top, behavior: 'smooth' });
   });
+
+  goToBlogButton.addEventListener('click', () => {
+    window.location.href = 'pages/blog.html';
+  });
+
 });

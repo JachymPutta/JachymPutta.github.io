@@ -13,6 +13,8 @@
           buildInputs=[
             pkgs.nodejs
             pkgs.nodePackages.live-server
+            pkgs.tailwindcss
+            pkgs.nodePackages.vscode-langservers-extracted
           ];
         };
       }

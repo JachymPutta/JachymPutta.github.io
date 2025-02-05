@@ -1,0 +1,55 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jachym Putta</title>
+  <link href="../styles/style_out.css" rel="stylesheet" />
+  <link href="../styles/animation.css" rel="stylesheet" />
+  <link rel="icon" type="image/x-icon" href="resources/favicon.ico" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+  <section id="header" class="flex flex-col sticky items-center justify-center z-10">
+    <div class="bg-header-gray rounded-full fixed top-3 w-auto max-w-6xl bg-opacity-80 backdrop-blur-sm">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-16 flex items-center justify-center h-12">
+        <button id="go-to-index" class="lg:text-xl sm:text-md font-semibold text-white mx-4">
+        </button>
+        <button id="go-to-blog" class="lg:text-xl sm:text-md font-semibold text-white mx-4">
+        </button>
+        <script>
+          document.getElementById("go-to-index").addEventListener("click", function () {
+            window.location.href = "../index.html";
+          });
+        </script>
+        <script>
+          document.getElementById("go-to-blog").addEventListener("click", function () {
+            window.location.href = "blog.html";
+          });
+        </script>
+      </div>
+    </div>
+  </section>
+
+  <section class="flex flex-col items-center justify-center">
+    <section id="posts"
+      class="flex flex-col items-center mt-20 p-4 max-w-3xl w-full text-left rounded-md bg-gray-100 bg-opacity-60 backdrop-blur-sm">
+      <h1 class="text-center text-3xl font-medium mt-2">Nix Config Journey</h1>
+    </section>
+
+    <div class="white">
+      <div class="squares">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+      </div>
+    </div>
+  </section>
+</body>
