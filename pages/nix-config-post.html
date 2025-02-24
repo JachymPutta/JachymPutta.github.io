@@ -35,6 +35,22 @@
     <section id="posts"
       class="flex flex-col items-center mt-20 p-4 max-w-3xl w-full text-left rounded-md bg-gray-100 bg-opacity-60 backdrop-blur-sm">
       <h1 class="text-center text-3xl font-medium mt-2">Nix Config Journey</h1>
+      <p> It's really one of the best things ever until you need something that is not packaged with Nix and is not
+        easily package-able, then it's a pain. </p>
+      <p> The upside is clear, especially for developers that often have to work on remote machines and benefit from
+        having identical setups. It's also amazing when using software that's packaged with Nix—a quick per-project
+        <code>flake.nix</code> and everything is pretty much guaranteed to run smoothly. </p>
+      <p> The problem is as soon as you need something that's not packaged with Nix. Despite <code>nixpkgs</code> being
+        one of the richest package repositories out there, depending on what you're doing, this sadly happens
+        semi-regularly. </p>
+      <p> At that point, you really have two options: </p>
+      <ul class="list-disc pl-6">
+        <li><strong>Package it yourself</strong>, which is often much easier said than done, but not impossible.</li>
+        <li><strong>Get rid of Nix completely</strong> for that particular setup, because getting Nix to play nice with
+          non-Nix packages is a huge pain.</li>
+      </ul>
+      <p> Overall, it's probably worth it? Or maybe I've just sunk too much time into it to admit that it's not. Who
+        knows? </p>
     </section>
 
     <div class="white">
