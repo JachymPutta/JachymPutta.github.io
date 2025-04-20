@@ -10,11 +10,12 @@
         pkgs = (import (inputs.nixpkgs) { inherit system; });
       in {
         devShell = pkgs.mkShell {
-          buildInputs=[
-            pkgs.nodejs
-            pkgs.nodePackages.live-server
-            pkgs.tailwindcss
-            pkgs.nodePackages.vscode-langservers-extracted
+          nativeBuildInputs = with pkgs; [
+            nodejs
+            nodePackages.live-server
+            tailwindcss
+            nodePackages.vscode-langservers-extracted
+            just
           ];
         };
       }

@@ -60,11 +60,11 @@ ul {
   #scroll-to-intro::before {
     content: "Intro";
   }
-  #scroll-to-exp::before {
-    content: "Jobs";
+  #scroll-to-research::before  {
+    content: "Research";
   }
-  #scroll-to-projects::before  {
-    content: "Projects";
+  #scroll-to-open-source::before  {
+    content: "Open Source";
   }
   #scroll-to-contact::before  {
     content: "@me";
@@ -81,11 +81,11 @@ ul {
   #scroll-to-intro::before {
     content: "Introduction";
   }
-  #scroll-to-exp::before {
-    content: "Job History";
+  #scroll-to-research::before  {
+    content: "Research";
   }
-  #scroll-to-projects::before  {
-    content: "Projects";
+  #scroll-to-open-source::before  {
+    content: "Open Source";
   }
   #scroll-to-contact::before  {
     content: "Contact";
@@ -96,4 +96,33 @@ ul {
   #go-to-index::before {
     content: "Home";
   }
+}
+
+.open-source-img {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+}
+
+.section-style {
+  max-width: 768px;
+  margin: 3rem auto;
+  padding: 1.5rem;
+  background-color: rgba(243,244,246,0.6);
+  backdrop-filter: blur(4px);
+  border-radius: 0.5rem;
+  text-align: left;
+}
+
+.section-title {
+  font-size: 1.875rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.skills-list, .certifications-list {
+  list-style-type: disc;
+  padding-left: 2rem;
+  color: #374151;
 }

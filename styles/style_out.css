@@ -655,10 +655,6 @@ video {
   display: grid;
 }
 
-.h-10 {
-  height: 2.5rem;
-}
-
 .h-12 {
   height: 3rem;
 }
@@ -677,10 +673,6 @@ video {
 
 .h-8 {
   height: 2rem;
-}
-
-.w-10 {
-  width: 2.5rem;
 }
 
 .w-14 {
@@ -715,16 +707,8 @@ video {
   max-width: 72rem;
 }
 
-.grid-cols-1 {
-  grid-template-columns: repeat(1, minmax(0, 1fr));
-}
-
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -808,15 +792,6 @@ video {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-
-.py-6 {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-}
-
-.pl-10 {
-  padding-left: 2.5rem;
 }
 
 .pl-5 {
@@ -974,12 +949,12 @@ ul {
     content: "Intro";
   }
 
-  #scroll-to-exp::before {
-    content: "Jobs";
+  #scroll-to-research::before  {
+    content: "Research";
   }
 
-  #scroll-to-projects::before  {
-    content: "Projects";
+  #scroll-to-open-source::before  {
+    content: "Open Source";
   }
 
   #scroll-to-contact::before  {
@@ -1000,12 +975,12 @@ ul {
     content: "Introduction";
   }
 
-  #scroll-to-exp::before {
-    content: "Job History";
+  #scroll-to-research::before  {
+    content: "Research";
   }
 
-  #scroll-to-projects::before  {
-    content: "Projects";
+  #scroll-to-open-source::before  {
+    content: "Open Source";
   }
 
   #scroll-to-contact::before  {
@@ -1021,6 +996,37 @@ ul {
   }
 }
 
+.open-source-img {
+  width: 56px;
+  height: 56px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.section-style {
+  max-width: 768px;
+  margin: 3rem auto;
+  padding: 1.5rem;
+  background-color: rgba(243,244,246,0.6);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  border-radius: 0.5rem;
+  text-align: left;
+}
+
+.section-title {
+  font-size: 1.875rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.skills-list, .certifications-list {
+  list-style-type: disc;
+  padding-left: 2rem;
+  color: #374151;
+}
+
 .hover\:bg-opacity-70:hover {
   --tw-bg-opacity: 0.7;
 }
@@ -1033,8 +1039,8 @@ ul {
 }
 
 @media (min-width: 768px) {
-  .md\:grid-cols-1 {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 

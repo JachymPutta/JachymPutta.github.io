@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-
+<html>
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -11,25 +11,26 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <script src="scrolling.js"></script>
 </head>
-
 <body>
-  <section id="header" class="flex flex-col sticky items-center justify-center z-10">
-    <div class="bg-header-gray rounded-full fixed top-3 w-auto max-w-6xl bg-opacity-80 backdrop-blur-sm">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-16 flex items-center justify-center h-12">
-        <button id="scroll-to-intro" class="lg:text-xl sm:text-md font-semibold text-white mx-4">
-        </button>
-        <button id="scroll-to-exp" class="lg:text-xl sm:text-md font-semibold text-white mx-4">
-        </button>
-        <button id="scroll-to-projects" class="lg:text-xl sm:text-md font-semibold text-white mx-4">
-        </button>
-        <button id="scroll-to-contact" class="lg:text-xl sm:text-md font-semibold text-white mx-4">
-        </button>
-        <button id="go-to-blog" class="lg:text-xl sm:text-md font-semibold text-white mx-4">
-        </button>
+  <section id="header" class=
+  "flex flex-col sticky items-center justify-center z-10">
+    <div class=
+    "bg-header-gray rounded-full fixed top-3 w-auto max-w-6xl bg-opacity-80 backdrop-blur-sm">
+      <div class=
+      "max-w-6xl mx-auto px-4 sm:px-6 lg:px-16 flex items-center justify-center h-12">
+        <button id="scroll-to-intro" class=
+        "lg:text-xl sm:text-md font-semibold text-white mx-4"></button>
+        <button id="scroll-to-research" class=
+        "lg:text-xl sm:text-md font-semibold text-white mx-4"></button>
+        <button id="scroll-to-open-source" class=
+        "lg:text-xl sm:text-md font-semibold text-white mx-4"></button>
+        <button id="go-to-blog" class=
+        "lg:text-xl sm:text-md font-semibold text-white mx-4"></button>
+        <button id="scroll-to-contact" class=
+        "lg:text-xl sm:text-md font-semibold text-white mx-4"></button>
       </div>
     </div>
   </section>
-
   <section class="flex flex-col items-center justify-center">
     <section id="intro"
       class="grid max-w-3xl grid-cols-2 p-4 gap-4 mt-20 mb-12 bg-gray-100 bg-opacity-60 backdrop-blur-sm rounded-md">
@@ -87,106 +88,36 @@
         </div>
       </div>
     </section>
-
-    <section id="exp"
-      class="flex flex-col items-center p-4 max-w-3xl w-full text-left rounded-md bg-gray-100 bg-opacity-60 backdrop-blur-sm">
-      <h1 class="text-center text-3xl font-medium mt-2">Job History</h1>
-      <ul class="grid grid-cols-3 gap-4 pl-10">
+    <section id="research" class=
+    "flex flex-col items-center w-full text-left rounded-md bg-gray-100 bg-opacity-60 backdrop-blur-sm py-4 my-12">
+      <h1 class="text-3xl font-medium text-black mt-2">
+      Research Projects</h1>
+      <ul class="pl-5 grid grid-cols-2 md:grid-cols-2">
         <li class="my-6">
           <div class="flex items-center">
-            <div class="border-2 border-gray-100 shadow-xl p-4 rounded-md mr-4 bg-white">
-              <img src="resources/cdn77Logo.png" alt="CDN77Logo" class="h-14 w-14" />
-            </div>
+            <div class=
+            "border-2 border-gray-100 shadow-xl p-4 rounded-md mr-8 bg-white">
+            <img src="resources/mlPerfLogo.avif" alt="SpiritLogo"
+            class="col-span-1 h-20 w-20"></div>
             <div>
-              <span class="block text-md font-medium text-gray-500">Video Streaming Intern</span>
-              <span class="block">CDN77</span>
-            </div>
-          </div>
-        </li>
-        <li class="my-6">
-          <div class="flex items-center">
-            <div class="border-2 border-gray-100 shadow-xl p-4 rounded-md mr-4 bg-white">
-              <img src="resources/yncLogo.png" alt="YNCLogo" class="h-14 w-14" />
-            </div>
-            <div>
-              <span class="block text-md font-medium text-gray-500">Research Assistant</span>
-              <span class="block">Yale-NUS College</span>
-            </div>
-          </div>
-        </li>
-        <li class="my-6">
-          <div class="flex items-center">
-            <div class="border-2 border-gray-100 shadow-xl p-4 rounded-md mr-4 bg-white">
-              <img src="resources/yaleLogo.png" alt="YaleLogo" class="h-14 w-14" />
-            </div>
-            <div>
-              <span class="block text-md font-medium text-gray-500">Research Assistant</span>
-              <span class="block">Yale University</span>
-            </div>
-          </div>
-        </li>
-        <li class="my-6">
-          <div class="flex items-center">
-            <div class="border-2 border-gray-100 shadow-xl p-4 rounded-md mr-4 bg-white">
-              <img src="resources/yncLogo.png" alt="YNCLogo" class="h-14 w-14" />
-            </div>
-            <div>
-              <span class="block text-md font-medium text-gray-500">Peer Tutor</span>
-              <span class="block">Yale-NUS College</span>
-            </div>
-          </div>
-        </li>
-        <li class="my-6">
-          <div class="flex items-center">
-            <div class="border-2 border-gray-100 shadow-xl p-4 rounded-md mr-4 bg-white">
-              <img src="resources/zilliqaLogo.png" alt="ZilliqaLogo" class="h-14 w-14" />
-            </div>
-            <div>
-              <span class="block text-md font-medium text-gray-500">Research Intern</span>
-              <span class="block">Zilliqa</span>
-            </div>
-          </div>
-        </li>
-        <li class="my-6">
-          <div class="flex items-center">
-            <div class="border-2 border-gray-100 shadow-xl px-4 py-6 rounded-md mr-4 bg-white">
-              <img src="resources/upskillsLogo.png" alt="UpskillsLogo" class="h-10 w-18" />
-            </div>
-            <div>
-              <span class="block text-md font-medium text-gray-500">Software Enginnering Intern</span>
-              <span class="block">Upskills</span>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </section>
-
-    <section id="projects"
-      class="flex flex-col items-center max-w-3xl w-full text-left rounded-md bg-gray-100 bg-opacity-60 backdrop-blur-sm py-4 my-12">
-      <h1 class="text-3xl font-medium text-black mt-2">Projects</h1>
-      <ul class="pl-5 grid grid-cols-1 md:grid-cols-1">
-        <li class="my-6">
-          <div class="flex items-center">
-            <div class="border-2 border-gray-100 shadow-xl p-4 rounded-md mr-8 bg-white">
-              <img src="resources/androidLogo.png" alt="ChoreyLogo" class="col-span-1 h-20 w-20" />
-            </div>
-            <div>
-              <span class="block text-lg font-semibold">Chorey</span>
+              <span class=
+              "block text-lg font-semibold">ML Perf</span>
               <span class="block text-md text-gray-500">
-                Co-living management app</span>
+              Memory tiering with CXL for AI/ML workloads
+              </span>
               <h4 class="text-sm mt-4">Built with:</h4>
               <div class="flex flex-row m-2">
-                <div class="flex flex-col items-center mr-4 text-center">
-                  <img src="resources/kotlinLogo.png" alt="KotlinLogo" class="h-8 w-8" />
-                  <p class="sub-heading">
-                    Kotlin
-                  </p>
+                <div class=
+                "flex flex-col items-center mr-4 text-center">
+                  <img src="resources/rustLogo.png" alt=
+                  "RustLogo" class="h-8 w-8">
+                  <p class="sub-heading">Rust</p>
                 </div>
-                <div class="flex flex-col items-center mx-4 text-center">
-                  <img src="resources/androidStudioLogo.png" alt="AndroidStudioLogo" class="mx-2 h-8 w-8" />
-                  <p class="sub-heading">
-                    Android Studio
-                  </p>
+                <div class=
+                "flex flex-col items-center mr-4 text-center">
+                  <img src="resources/pythonLogo.png" alt=
+                  "RustLogo" class="h-8 w-8">
+                  <p class="sub-heading">Python</p>
                 </div>
               </div>
             </div>
@@ -194,49 +125,29 @@
         </li>
         <li class="my-6">
           <div class="flex items-center">
-            <div class="border-2 border-gray-100 shadow-xl p-4 rounded-md mr-8 bg-white">
-              <img src="resources/wcfaLogo.png" alt="GameOfLife" class="col-span-1 h-20 w-20" />
-            </div>
+            <div class=
+            "border-2 border-gray-100 shadow-xl p-4 rounded-md mr-8 bg-white">
+            <img src="resources/spiritLogo.png" alt="SpiritLogo"
+            class="col-span-1 h-20 w-20"></div>
             <div>
-              <span class="block text-lg font-semibold">
-                W-CFA</span>
+              <span class=
+              "block text-lg font-semibold">Spirit</span>
               <span class="block text-md text-gray-500">
-                0-CFA worklist implementation on the GPU</span>
+              Cloud resource allocation algorithm
+              </span>
               <h4 class="text-sm mt-4">Built with:</h4>
               <div class="flex flex-row m-2">
-                <div class="flex flex-col items-center mr-4 text-center">
-                  <img src="resources/cppLogo.png" alt="CppLogo" class="h-10 w-10" />
-                  <p class="sub-heading">
-                    C++
-                  </p>
+                <div class=
+                "flex flex-col items-center mr-4 text-center">
+                  <img src="resources/rustLogo.png" alt=
+                  "RustLogo" class="h-8 w-8">
+                  <p class="sub-heading">Rust</p>
                 </div>
-                <div class="flex flex-col items-center mx-4 text-center">
-                  <img src="resources/cudaLogo.png" alt="CUDALogo" class="mx-2 h-10 w-10" />
-                  <p class="sub-heading">
-                    CUDA
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li class="my-6">
-          <div class="flex items-center">
-            <div class="border-2 border-gray-100 shadow-xl p-4 rounded-md mr-8 bg-white">
-              <img src="resources/gameOfLife.gif" alt="GameOfLife" class="col-span-1 h-20 w-20" />
-            </div>
-            <div>
-              <span class="block text-lg font-semibold">
-                Conway's Game of Life</span>
-              <span class="block text-md text-gray-500">
-                Custom simulation</span>
-              <h4 class="text-sm mt-4">Built with:</h4>
-              <div class="flex flex-row m-2">
-                <div class="flex flex-col items-center mr-4 text-center">
-                  <img src="resources/ocamlLogo.png" alt="KotlinLogo" class="h-8 w-8" />
-                  <p class="sub-heading">
-                    OCaml
-                  </p>
+                <div class=
+                "flex flex-col items-center mr-4 text-center">
+                  <img src="resources/dockerLogo.webp" alt=
+                  "RustLogo" class="h-8 w-8">
+                  <p class="sub-heading">Docker</p>
                 </div>
               </div>
             </div>
@@ -245,52 +156,177 @@
       </ul>
     </section>
 
-    <section id="exp"
-      class="flex flex-col items-center p-4 max-w-3xl w-full text-left rounded-md bg-gray-100 bg-opacity-60 backdrop-blur-sm">
-      <h1 class="text-center text-3xl font-medium mt-2">Open Source</h1>
-      <ul class="grid grid-cols-3 gap-4 pl-10">
+    <section id="open-source" class=
+    "flex flex-col items-center w-full text-left rounded-md bg-gray-100 bg-opacity-60 backdrop-blur-sm py-4 my-12">
+      <h1 class="text-3xl font-medium text-black mt-2">
+      Open Source</h1>
+      <ul class="pl-5 grid grid-cols-2 md:grid-cols-2">
         <li class="my-6">
-          <a href="https://github.com/tracel-ai/burn" target="_blank" class="flex items-center">
-            <div class="border-2 border-gray-100 shadow-xl p-4 rounded-md mr-4 bg-white">
-              <img src="resources/burnLogo.png" alt="BurnLogo" class="h-14 w-14" />
-            </div>
+          <div class="flex items-center">
+            <div class=
+            "border-2 border-gray-100 shadow-xl p-4 rounded-md mr-8 bg-white">
+            <img src="resources/dailiesLogo.jpg" alt="dailiesLogo"
+            class="col-span-1 h-20 w-20"></div>
             <div>
-              <span class="block text-md font-medium text-gray-500">Burn</span>
-              <span class="block">Onnx Integration</span>
+              <span class=
+              "block text-lg font-semibold">Dailies</span>
+              <span class="block text-md text-gray-500">
+              Daily journaling in Markdown
+              </span>
+              <h4 class="text-sm mt-4">Built with:</h4>
+              <div class="flex flex-row m-2">
+                <div class=
+                "flex flex-col items-center mr-4 text-center">
+                  <img src="resources/rustLogo.png" alt=
+                  "RustLogo" class="h-8 w-8">
+                  <p class="sub-heading">Rust</p>
+                </div>
+                <div class=
+                "flex flex-col items-center mr-4 text-center">
+                  <img src="resources/nixLogo.png" alt=
+                  "RustLogo" class="h-8 w-8">
+                  <p class="sub-heading">Nix</p>
+                </div>
+              </div>
             </div>
-          </a>
+          </div>
         </li>
         <li class="my-6">
-          <a href="https://github.com/detypstify/detypstify" target="_blank" class="flex items-center">
-            <div class="border-2 border-gray-100 shadow-xl p-4 rounded-md mr-4 bg-white">
-              <img src="resources/detypstifyLogo.png" alt="BurnLogo" class="h-14 w-14" />
-            </div>
+          <div class="flex items-center">
+            <div class=
+            "border-2 border-gray-100 shadow-xl p-4 rounded-md mr-8 bg-white">
+            <img src="resources/detypstifyLogo.png" alt="DetypstifyLogo"
+            class="col-span-1 h-20 w-20"></div>
             <div>
-              <span class="block text-md font-medium text-gray-500">Detypstify</span>
-              <span class="block">OCR in Rust and WASM</span>
+              <span class=
+              "block text-lg font-semibold">Detypstify</span>
+              <span class="block text-md text-gray-500">
+              Using OCR to convert math to typst code
+              </span>
+              <h4 class="text-sm mt-4">Built with:</h4>
+              <div class="flex flex-row m-2">
+                <div class=
+                "flex flex-col items-center mr-4 text-center">
+                  <img src="resources/rustLogo.png" alt=
+                  "RustLogo" class="h-8 w-8">
+                  <p class="sub-heading">Rust</p>
+                </div>
+                <div class=
+                "flex flex-col items-center mr-4 text-center">
+                  <img src="resources/typstLogo.png" alt=
+                  "RustLogo" class="h-8 w-8">
+                  <p class="sub-heading">typst</p>
+                </div>
+                <div class=
+                "flex flex-col items-center mr-4 text-center">
+                  <img src="resources/nixLogo.png" alt=
+                  "RustLogo" class="h-8 w-8">
+                  <p class="sub-heading">Nix</p>
+                </div>
+              </div>
             </div>
-          </a>
+          </div>
         </li>
         <li class="my-6">
-          <a href="https://github.com/JachymPutta/dotfiles" target="_blank" class="flex items-center">
-            <div class="border-2 border-gray-100 shadow-xl p-4 rounded-md mr-4 bg-white">
-              <img src="resources/nixLogo.png" alt="BurnLogo" class="h-14 w-14" />
-            </div>
+          <div class="flex items-center">
+            <div class=
+            "border-2 border-gray-100 shadow-xl p-4 rounded-md mr-8 bg-white">
+            <img src="resources/burnLogo.png" alt="BurnLogo"
+            class="col-span-1 h-20 w-20"></div>
             <div>
-              <span class="block text-md font-medium text-gray-500">Dotfiles</span>
-              <span class="block">Personal Dev config with Nix</span>
+              <span class=
+              "block text-lg font-semibold">Burn</span>
+              <span class="block text-md text-gray-500">
+              ONNX integration into framework
+              </span>
+              <h4 class="text-sm mt-4">Built with:</h4>
+              <div class="flex flex-row m-2">
+                <div class=
+                "flex flex-col items-center mr-4 text-center">
+                  <img src="resources/rustLogo.png" alt=
+                  "RustLogo" class="h-8 w-8">
+                  <p class="sub-heading">Rust</p>
+                </div>
+              </div>
             </div>
-          </a>
+          </div>
+        </li>
+        <li class="my-6">
+          <div class="flex items-center">
+            <div class=
+            "border-2 border-gray-100 shadow-xl p-4 rounded-md mr-8 bg-white">
+            <img src="resources/nixLogo.png" alt="NixLogo"
+            class="col-span-1 h-20 w-20"></div>
+            <div>
+              <span class=
+              "block text-lg font-semibold">Dotfiles</span>
+              <span class="block text-md text-gray-500">
+              Personal development environment
+              </span>
+              <h4 class="text-sm mt-4">Built with:</h4>
+              <div class="flex flex-row m-2">
+                <div class=
+                "flex flex-col items-center mr-4 text-center">
+                  <img src="resources/nixLogo.png" alt=
+                  "KotlinLogo" class="h-8 w-8">
+                  <p class="sub-heading">Nix</p>
+                </div>
+                <div class=
+                "flex flex-col items-center mr-4 text-center">
+                  <img src="resources/nixDarwinLogo.png" alt=
+                  "KotlinLogo" class="h-8 w-8">
+                  <p class="sub-heading">Nix Darwin</p>
+                </div>
+                <div class=
+                "flex flex-col items-center text-center">
+                  <img src="resources/luaLogo.png" alt=
+                  "AndroidStudioLogo" class="mx-2 h-8 w-8">
+                  <p class="sub-heading">Lua</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="my-6">
+          <div class="flex items-center">
+            <div class=
+            "border-2 border-gray-100 shadow-xl p-4 rounded-md mr-8 bg-white">
+            <img src="resources/androidLogo.png" alt="ChoreyLogo"
+            class="col-span-1 h-20 w-20"></div>
+            <div>
+              <span class=
+              "block text-lg font-semibold">Chorey</span>
+              <span class="block text-md text-gray-500">Co-living
+              management app</span>
+              <h4 class="text-sm mt-4">Built with:</h4>
+              <div class="flex flex-row m-2">
+                <div class=
+                "flex flex-col items-center mr-4 text-center">
+                  <img src="resources/kotlinLogo.png" alt=
+                  "KotlinLogo" class="h-8 w-8">
+                  <p class="sub-heading">Kotlin</p>
+                </div>
+                <div class=
+                "flex flex-col items-center mx-4 text-center">
+                  <img src="resources/androidStudioLogo.png" alt=
+                  "AndroidStudioLogo" class="mx-2 h-8 w-8">
+                  <p class="sub-heading">Android Studio</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </li>
       </ul>
     </section>
-    <section id="contact"
-      class="flex flex-col items-center max-w-3xl w-full text-left rounded-md bg-gray-100 bg-opacity-60 backdrop-blur-sm py-4 my-12">
+    <section id="contact" class=
+    "flex flex-col items-center max-w-3xl w-full text-left rounded-md bg-gray-100 bg-opacity-60 backdrop-blur-sm py-4 my-12">
       <h1 class="text-3xl font-medium text-black mt-2">Contact</h1>
-      <p class="font-light text-xl my-6">Feel free to reach out by email!</p>
-      <div class="sub-heading py-4">jachym.putta[at]yale.edu</div>
+      <p class="font-light text-xl my-6">Feel free to reach out by
+      email!</p>
+      <div class="sub-heading py-4">
+        jachym.putta[at]gmail.com
+      </div>
     </section>
-
     <div class="white">
       <div class="squares">
         <div class="square"></div>
@@ -307,3 +343,4 @@
     </div>
   </section>
 </body>
+</html>
