@@ -11,7 +11,6 @@
       in {
         devShell = pkgs.mkShell {
           nativeBuildInputs = with pkgs; [
-            nodejs
             nodePackages.live-server
             tailwindcss
             nodePackages.vscode-langservers-extracted
