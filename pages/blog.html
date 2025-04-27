@@ -5,7 +5,7 @@
   <title>Jachym Putta</title>
   <link href="../styles/style_out.css" rel="stylesheet" />
   <link href="../styles/animation.css" rel="stylesheet" />
-  <link rel="icon" type="image/x-icon" href="resources/favicon.ico" />
+  <link rel="icon" type="image/x-icon" href="../resources/favicon.ico" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 </head>
 
@@ -13,12 +13,14 @@
   <section id="header" class="flex flex-col sticky items-center justify-center z-10">
     <div class="bg-header-gray rounded-full fixed top-3 w-auto max-w-6xl bg-opacity-80 backdrop-blur-sm">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-16 flex items-center justify-center h-12">
-        <button id="go-to-index" class="lg:text-xl sm:text-md font-semibold text-white mx-4">
-        </button>
+        <button
+          id="go-to-index"
+          class="block transform transition duration-300 hover:scale-105 hover:shadow-2xl rounded-md lg:text-xl sm:text-md font-semibold text-white mx-4 flex items-center"
+        />
         <script>
-          document.getElementById("go-to-index").addEventListener("click", function () {
-            window.location.href = "../index.html";
-          });
+        document.getElementById("go-to-index").addEventListener("click", function () {
+          window.location.href = "../index.html";
+        });
         </script>
       </div>
     </div>
@@ -28,20 +30,41 @@
     <section id="posts"
       class="flex flex-col items-center mt-20 p-4 max-w-3xl w-full text-left rounded-md bg-gray-100 bg-opacity-60 backdrop-blur-sm">
       <h1 class="text-center text-3xl font-medium mt-2">Posts</h1>
+        <ul class="p-5 grid grid-cols-1 md:grid-cols-1">
+        <li class="my-6">
+          <div class="block transform transition duration-300 hover:scale-105 hover:shadow-2xl rounded-md">
+            <div id="custom-keyboard-test" class="flex items-center p-4">
+              <div class="border-2 border-gray-100 shadow-xl p-4 rounded-md mr-4 bg-white">
+                <img src="../resources/splitKeyboard.png" alt="nixLogo" class="h-14 w-12" />
+              </div>
+              <div>
+                <span class="block text-md font-medium text-gray-500">Custom Keyboard Test</span>
+              </div>
+              <script>
+              document.getElementById("custom-keyboard-test").addEventListener("click", function () {
+                window.location.href = "custom-keyboard-test.html";
+              });
+              </script>
+            </div>
+          </div>
+        </li>
+      </ul>
       <ul class="gap-4 pl-10">
         <li class="my-6">
-          <div id="nix-config-post" class="flex items-center">
-            <div class="border-2 border-gray-100 shadow-xl p-4 rounded-md mr-4 bg-white">
-              <img src="../resources/nixLogo.png" alt="CDN77Logo" class="h-14 w-14" />
-            </div>
-            <div>
-              <span class="block text-md font-medium text-gray-500">Nix Config Rant</span>
-            </div>
-            <script>
+          <div class="block transform transition duration-300 hover:scale-105 hover:shadow-2xl rounded-md">
+            <div id="nix-config-post" class="flex items-center p-4">
+              <div class="border-2 border-gray-100 shadow-xl p-4 rounded-md mr-4 bg-white">
+                <img src="../resources/nixLogo.png" alt="nixLogo" class="h-14 w-14" />
+              </div>
+              <div>
+                <span class="block text-md font-medium text-gray-500">Nix Config Rant</span>
+              </div>
+              <script>
               document.getElementById("nix-config-post").addEventListener("click", function () {
                 window.location.href = "nix-config-post.html";
               });
-            </script>
+              </script>
+            </div>
           </div>
         </li>
       </ul>
