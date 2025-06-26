@@ -16,11 +16,4 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     }
   });
-
-  const goToBlogButton = document.getElementById('go-to-blog');
-  if (goToBlogButton) {
-    goToBlogButton.addEventListener('click', () => {
-      window.location.href = 'pages/blog.html';
-    });
-  }
 });

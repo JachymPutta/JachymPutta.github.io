@@ -74,9 +74,6 @@ ul {
   #scroll-to-contact::before  {
     content: "@me";
   }
-  #go-to-blog::before {
-    content: "Blog";
-  }
   #go-to-index::before {
     content: "Home";
   }
@@ -94,9 +91,6 @@ ul {
   }
   #scroll-to-contact::before  {
     content: "Contact";
-  }
-  #go-to-blog::before {
-    content: "Blog";
   }
   #go-to-index::before {
     content: "Home";
